@@ -50,3 +50,47 @@ body {
         background: #fff;
         z-index: -1
     }
+
+/* Style for the header and index */
+header {
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Style for the blog post sections */
+article {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+article h2 {
+    color: #333;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+}

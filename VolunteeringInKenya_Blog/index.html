@@ -12,7 +12,7 @@
             background-position: center;
             background-repeat: no-repeat;
             height: 100vh;
-            overflow: hidden;
+            overflow: auto;
         }
     </style>
     <body>
@@ -24,21 +24,34 @@
             <div class="banner-btn">
                 <a href="#"><span></span>What I did</a>
                 <a href="#"><span></span>What I learnt</a>
-
-
             </div>
-        </div>
-            <style>
-body {
-margin: 0; 
-    }
-    
-            #banner {
-                padding: 20px; 
-            }
-            </style>
-        
+        </div>      
         </section>
+
+        <!-- this code adds the index -->
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#post1">Blog Post 1 Title</a></li>
+                    <li><a href="#post2">Blog Post 2 Title</a></li>
+                    <!-- Add more list items for each blog post -->
+                </ul>
+            </nav>
+        </header>
+        <!-- end of index -->
+
+        <!-- in here the blogposts are added -->
+        <article id="post1">
+            <h2>Blog Post 1 Title</h2>
+            <img src="photos/20230723_155320.jpg" alt="Description of Image">
+            <p>Description of the photo and blog post content.</p>
+        </article>
+        <article id="post2">
+            <h2>Blog Post 2 Title</h2>
+            <img src="photos/20230723_161255.jpg" alt="Description of Image">
+            <p>Description of the photo and blog post content.</p>
+        </article>
+        <!-- end of blogposts -->
     </body>
 </head>
 <body>
