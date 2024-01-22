@@ -1,0 +1,98 @@
+<head>
+    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.5">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Caveat&display=swap" rel="stylesheet">
+    </head>
+    <div id="home">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(rgba(0,0,0,0.5) ,#ffa600d0),url(photos/20230724_104344.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            
+        }
+        
+    </style>
+    <body>
+        <section id="banner">
+            <div class="banner-text">
+            <img src="photos/Untitled10_20240120145422.png" class="logo">
+            <h1>Volunteering In Kenya</h1>
+            <p>Eveything I learnt, Saw and Did</p>
+            <div class="banner-btn">
+                <a href="#"><span></span>What I did</a>
+                <a href="#"><span></span>What I learnt</a>
+
+
+            </div>
+        </div>
+            <style>
+                
+body {
+margin: 0; 
+    }
+    
+            #banner {
+                padding: 20px; 
+            }
+            </style>
+        
+        </section>
+
+        <div id="sideNav">
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">LEAD UP</a></li>
+                    <li><a href="#">DURING</a></li>
+                    <li><a href="#">AFTER-MATH</a></li>
+                    <li><a href="#">FOLLOW ME</a></li>
+                </ul>
+            </nav>
+
+        </div>
+        
+        <div id="menuBtn">
+            <img src ="photos/Untitled8_20240120143126.png" id="menu">
+        </div> 
+
+<section id="feature">
+    <div class="title-text">
+        <p>KENYA</p>
+        <h1>where is it?</h1>
+    </div>
+</section>
+
+
+
+
+        <script>
+            var menuBtn = document.getElementById("menuBtn");
+            var sideNav = document.getElementById("sideNav");
+            var menu = document.getElementById("menu");
+            
+            sideNav.style.right = "-370px"
+        
+            menuBtn.onclick = function() {
+                if (sideNav.style.right == "-370px") {
+                    sideNav.style.right = "0";
+                     menu.src = "photos/Untitled9_20240120143309.png";  
+                }
+                else {
+                    sideNav.style.right = "-370px";
+                    menu.src = "photos/Untitled8_20240120143126.png";  
+                }
+            }
+        </script>
+        
+    </body>
+
+
+
+
