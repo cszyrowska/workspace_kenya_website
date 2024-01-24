@@ -82,3 +82,13 @@ To assist you further, here is a sample code that might help you get the desired
 ```
 
 Please check the tutorial video again to ensure that you've included all the necessary CSS. If you still face issues, you might want to cross-reference with the exact timestamp in the video to see if there are additional styles that you may have missed.
+
+
+ background-color: #e4e2e1; 
+    min-height: 20vh;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+    padding: 100px;
+}
