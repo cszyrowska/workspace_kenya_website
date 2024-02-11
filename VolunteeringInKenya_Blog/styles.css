@@ -176,11 +176,19 @@ nav ul li a{
     flex-basis:  40%;
     margin: auto;
 }
+.features-container {
+    text-align: center; /* This will center the images if they are block elements */
+}
+
 .features-img img {
     width: 100%;
-    height: auto; 
+    max-width: 600px; /* You can set a max-width to prevent the image from being too large */
+    height: auto;
     border-radius: 10px;
+    display: block; /* This makes sure the image is a block element and will take up the full width */
+    margin: 20px auto; /* This adds space between the images and centers them */
 }
+
 
 .feature-text {
     width: 100%; 
@@ -247,6 +255,11 @@ color: black;
     background: #ffffff; /* This sets the background color for the whole section */
     text-align: center; /* This centers the title */
 }
+
+.during-blog p {
+    margin-bottom: 20px; /* Adjust the value as needed */
+  }
+  
 
 .title-text h1 {
     margin-bottom: 30px; /* Adds some space between the title and the images */
