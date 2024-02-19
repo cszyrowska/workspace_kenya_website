@@ -6,8 +6,10 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Caveat&display=swap" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-    
+
+
     </head>
+    <body class="home-page">
     <style>
         body {
             margin: 0;
@@ -20,13 +22,14 @@
             padding-bottom: 60%;
 
 }
-    /* what */
-    </style>
+</style>
+</body>
+
 
     <body>
         <section id="banner">
             <div class="banner-text">
-            <img src="photos/Untitled10_20240120145422.png" class="logo">
+            <img src="photos\Untitled10_20240219134236.png" class="logo">
             <h1>Volunteering In Kenya</h1>
             <p>Eveything I learnt, Saw and Did</p>
             <div class="banner-btn">
@@ -119,7 +122,7 @@ margin: 0;
                     <div class="what-I-did-desc">
                     <h3>Working at a nearby school</h3>
                     <hr>
-                    <p>It started to rain and we retreated to a little classroom for some shelter, but the children still were optimistic and carried on socialising with us. I met a give called grace who introduced me to all her friends and told me to never forget her – grace I still remember!</p>
+                    <p>It started to rain and we retreated to a little classroom for some shelter, but the children still were optimistic and carried on socialising with us. I met a girl called grace who introduced me to all her friends and told me to never forget her – grace I still remember!</p>
                 </div>
                     <div class="overlay"></div>
                 </div>
@@ -255,12 +258,20 @@ margin: 0;
         <h1>See my next adventure</h1>
     </div>
     <div class="social-links">
+        <!-- Link to LinkedIn -->
+      <a href="https://www.linkedin.com/in/cecylia-szyrowska-ba18612a3/" target="_blank" aria-label="LinkedIn">
         <i class="fa-brands fa-linkedin"></i>
+      </a>
         <i class="fa-brands fa-youtube"></i>
         <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-facebook-square"></i>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-    </div>
+         
+        <!-- Link to Facebook -->
+  <a href="https://www.facebook.com/yourusername" target="_blank" aria-label="Facebook">
+    <i class="fa-brands fa-facebook-square"></i>
+  </a>
+        <p>Instagram and Youtube accounts are in the making, not currently available.</p>
+      </div>
+
 </section>
 
 
@@ -282,32 +293,35 @@ margin: 0;
         </div>
         
         <div id="menuBtn">
-            <img src ="photos/Untitled8_20240120143126.png" id="menu">
+            <img src ="photos\Untitled8_20240219133144.png" id="menu">
         </div> 
- <script>
+        <script>
             var menuBtn = document.getElementById("menuBtn");
             var sideNav = document.getElementById("sideNav");
             var menu = document.getElementById("menu");
-            
-            sideNav.style.right = "-370px"
+        
+            sideNav.style.right = "-370px";
         
             menuBtn.onclick = function() {
                 if (sideNav.style.right == "-370px") {
                     sideNav.style.right = "0";
-                     menu.src = "photos/Untitled9_20240120143309.png";  
+                    menu.src = "photos/Untitled9_20240120143309.png"; // Use forward slashes
                 }
                 else {
                     sideNav.style.right = "-370px";
-                    menu.src = "photos/Untitled8_20240120143126.png";  
+                    menu.src = "photos/Untitled8_20240219133144.png"; // Use forward slashes
                 }
             }
             var scroll = new SmoothScroll('a[href*="#"]', {
-	speed: 1000,
-	speedAsDuration: true
-});
-       
+                speed: 1000,
+                speedAsDuration: true
+            });
+        
         </script>
         
+       
+        </script>
+
     </body>
     </html>
 

@@ -358,7 +358,7 @@ hr{
         text-align: center; /* This centers the title */
     }
 .after-math-row{
-    width: 80%;
+    width: 90%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -376,10 +376,10 @@ hr{
     transition: transform .5s;
 }
 .after-math-col p{
-    font-size: 17px;
+    font-size: 20px;
 }
 .after-math-col:hover{
-    transform: translateY(-7px)
+    transform: translateY(-9px)
 }
 
 .title-text {
