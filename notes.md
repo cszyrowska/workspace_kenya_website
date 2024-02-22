@@ -91,4 +91,9 @@ Please check the tutorial video again to ensure that you've included all the nec
     justify-content: center; 
     text-align: center;
     padding: 100px;
-}
+
+
+next steps:
+
+- make new repisotory of 'interest' : copy kenya & change
+- make new repisotory 'cecyliaszyrowska' : header w subpages, repisotories made will be added 
