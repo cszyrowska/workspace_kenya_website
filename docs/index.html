@@ -26,54 +26,49 @@
         </div>
     </section>
         
-        
     <section id="feature">
-        <div class="title-text">
-            <p>Volunteering in Kenya</p>
-            <h1>Lead up</h1>
-            <div>
-                <div class="feature-box">
-                    <div class="features">
-                        <div class="feature-text">
-                            <p>On the lead up to my expedition I learnt how to pack or myself and choose what brands of equipment would be the best. I also immersed myself in reading for what I were to expect in Kenya and attended many meeting at my school in which we all planned fundraising for the money needed to make our dreams reality. </p>
-                        </div>
-                        <h1>Location</h1>
-                        <div class="features-desc">
-                            <div class="feature-icon">
-                                <i class="fa fa-angle-double-right"></i>
-                            </div>
-                            <div class="feature-text">
-                                <p>Kenya, a country that beckons with its diverse landscapes and rich tapestry of cultures, is strategically nestled on the eastern coastline of Africa. Lying astride the equator, it serves as a bridge between the continent's vast savannahs to the south and the arid deserts to the north. To its east, Kenya is caressed by the warm waters of the Indian Ocean, offering a picturesque coastline that stretches from the tropical beaches of Diani in the south to the historic ruins of Gedi near Malindi. Its western border is marked by the rippling waters of Lake Victoria, shared with Uganda and Tanzania, forming part of the Great Rift Valley that slices through the country, creating a landscape replete with lakes, escarpments, and fertile highlands</p>
-                            </div>
-                        </div>
-                        <h1>Climate</h1>
-                        <div class="features-desc">
-                            <div class="feature-icon">
-                                <i class="fa fa-angle-double-right"></i>
-                            </div>
-                            <div class="feature-text">
-                                <p>The coastal regions enjoy a tropical climate characterized by humidity and relatively high temperatures, providing an eternal summer feel, perfect for beach enthusiasts. In contrast, the highlands, including areas around Nairobi and the Rift Valley, experience cooler temperatures and offer a respite from the coastal heat, with the climate being temperate and conducive to agriculture. As one ventures into the interior, particularly towards the north and northeast, the climate shifts to arid and semi-arid, reflecting the vast, open savannahs and desert landscapes that dominate these regions. These areas are marked by lower rainfall and higher temperature variations between day and night. Kenya also experiences two rainy seasons: the long rains from March to May and the short rains from October to December.</p>
-                            </div>
-                        </div>
-                        <h1>Culture</h1>
-                        <div class="features-desc">
-                            <div class="feature-icon">
-                                <i class="fa fa-angle-double-right"></i>
-                            </div>
-                            <div class="feature-text">
-                                <p>Home to over 40 different ethnic groups, each with its own unique language, traditions, music, dance, and art, Kenya offers a panoramic view of cultural richness unparalleled in many parts of the world. We mainly immersed ourselves in two main cultures : The Maasai, known for their distinctive attire and pastoral way of life, have become emblematic of Kenyan identity, yet they represent just one thread in the country's vibrant cultural tapestry. Swahili culture, which flourishes along the coast, embodies a blend of African, Arab, Persian, and Indian influences, a legacy of centuries of trade and interaction across the Indian Ocean. This rich cultural infusion is evident in the Swahili language, an African language with Arabic roots, and in the coastal cuisine, which features a tantalizing mix of spices and flavors.</p>
-                            </div>
-                        </div>
+        <div class="feature-container">
+            <div class="accordion">
+                <h1 class="accordion-header">Location</h1>
+                <div class="accordion-content">
+                    <p>Kenya, a country that beckons with its diverse landscapes and rich tapestry of cultures, is strategically nestled on the eastern coastline of Africa. Lying astride the equator, it serves as a bridge between the continent's vast savannahs to the south and the arid deserts to the north. To its east, Kenya is caressed by the warm waters of the Indian Ocean, offering a picturesque coastline that stretches from the tropical beaches of Diani in the south to the historic ruins of Gedi near Malindi. Its western border is marked by the rippling waters of Lake Victoria, shared with Uganda and Tanzania, forming part of the Great Rift Valley that slices through the country, creating a landscape replete with lakes, escarpments, and fertile highlands</p>
+                    <div class="feature-img">
+                        <img src="photos/20230809_144809.jpg">
                     </div>
-                    <div class="features-container">
-                        <div class="features-img">
-                            <img src="photos/20230809_144809.jpg">
-                        </div>
-                        <div class="features-img">
-                            <img src="photos/20230726_085918_long.jpg">
-                        </div>
+                </div>
+    
+                <h1 class="accordion-header">Climate</h1>
+                <div class="accordion-content">
+                    <p>The coastal regions enjoy a tropical climate characterized by humidity and relatively high temperatures...</p>
+                    <div class="feature-img">
+                        <img src="photos/20230726_085918_long.jpg">
                     </div>
+                </div>
+    
+                <h1 class="accordion-header">Culture</h1>
+                <div class="accordion-content">
+                    <p>Home to over 40 different ethnic groups, each with its own unique language, traditions, music, dance, and art...</p>
+                </div>
+            </div>
+        </div>
     </section>
+    
+    <script>
+        document.querySelectorAll('.accordion-header').forEach(button => {
+            button.addEventListener('click', () => {
+                const accordionContent = button.nextElementSibling;
+
+                button.classList.toggle('active');
+                if (button.classList.contains('active')) {
+                    accordionContent.style.display = 'block';
+                    accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+                } else {
+                    accordionContent.style.maxHeight = '0';
+                    setTimeout(() => accordionContent.style.display = 'none', 200);
+                }
+            });
+        });
+    </script>
         
 <!--During-->
 

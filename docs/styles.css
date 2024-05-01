@@ -1,9 +1,8 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Caveat', cursive;
-
-
 }
 body {
     background-color: #f0f0f0;
@@ -19,7 +18,7 @@ body {
 
 #banner {
     position: relative; /* This ensures absolute-positioned children are relative to this container */
-    padding: 20px;
+    padding: 70px;
     /* ... other styles ... */
 }
 .logo {
@@ -164,136 +163,64 @@ nav ul li a{
         margin: 10px 0; /* Adds space between the buttons */
     }
 }
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
 #feature {
     width: 100%;
-    padding: 70px 0;
-    background: #ffffff; /* This sets the background color for the whole section */
-    text-align: center; /* This centers the title */
-}
-
-.title-text {
+    padding: 70px 20px;
+    background: #ffffff;
     text-align: center;
-    width: 80%; 
-    margin: auto;
+}
+.accordion-header {
+    font-size: 1.75rem;
+    cursor: pointer;
+    padding: 15px;
+    background-color: #ffa500;
+    color: white;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: background-color 0.3s ease;
 }
 
-.title-text p {
-    margin: auto;
-    font-size: 20px;
-    color: rgb(0, 0, 0);
-    font-weight: normal;
-    position: relative;
-    z-index: 1;
-    display: inline-block;
-
+.accordion-header:hover,
+.accordion-header.active {
+    background-color: #ff9100;
 }
 
-.title-text h1{
-    font-size: 80px;
-
-}
-.feature-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: left; 
-    margin: auto; 
-    width: 100%; 
+.accordion-content {
+    background: #e2e2e2;
+    display: none;
+    overflow: hidden;
+    padding: 0 18px;
+    transition: max-height 1.0s ease-out;
 }
 
-.features {
-    flex-basis: 50%; 
-}
-
-.features-img {
-    flex-basis:  40%;
-    margin: auto;
-}
-.features-container {
-    text-align: center; /* This will center the images if they are block elements */
-}
-
-.features-img img {
+.feature-img img {
     width: 100%;
-    max-width: 500px; /* You can set a max-width to prevent the image from being too large */
+    max-width: 300px;
     height: auto;
-    border-radius: 10px;
-    display: block; /* This makes sure the image is a block element and will take up the full width */
-    margin: 300px auto; /* This adds space between the images and centers them */
-}
-
-
-.feature-text {
-    width: 100%; 
-    }
-
-
-    .features h1{
-text-align: left;
-margin-bottom: 10px;
-font-weight: 100;
-color: black;
-    }
-    .features-desc{
-        display: flex;
-        align-items: center;
-        margin-bottom: 40px;
-        justify-content: start;
-    }
-    .feature-icon .fa{
-        color:#ffa90a;
-        
-    }
-    .feature-text {
-    max-width: 100%; /* Set the max-width to use the full width of its parent container */
-}
-
-.feature-text p {
-    font-size: 20px; /* Adjust the font size as needed */
-    line-height: 1.4; /* Adjust line height for better readability */
-    text-align: justify; /* This will spread the text evenly across the full width */
-    margin: 0; /* Ensure no additional margin is affecting the layout */
-    padding: 0 10px; /* Add padding on the sides if needed */
-    white-space: normal; /* Ensure normal text wrapping */
+    border-radius: 8px;
+    margin: 20px auto;
+    display: block;
 }
 
 @media screen and (max-width: 770px) {
-    .feature-box {
-        flex-direction: column; /* Stack items vertically */
-        padding: 0 20px; /* Add padding to the left and right */
+    .title-text h1 {
+        font-size: 1.5rem;
     }
-    .features {
-        width: 100%; /* Text takes full width */
-        max-width: none; /* Ensure no max-width is constraining it */
+
+    .accordion-header {
+        font-size: 1.5rem;
     }
-    .features-img {
-        width: 100%; /* Set image container to take full width */
-        order: 2; /* Ensure the image container comes after the text */
-        margin-top: 20px; /* Add some space above the image */
-    }
-    .features-img img {
-        width: 100%; /* Image stretches to the width of its container */
-        height: auto; /* Maintain aspect ratio */
-    }
-    .feature-text {
-        order: 1; /* Ensure the text comes before the image */
-        padding: 0; /* Reset any padding */
-        margin: 0; /* Reset any margin to use the available space */
+
+    .feature-img img {
+        max-width: 100%;
     }
 }
 
 
 #DURING {
     width: 100%;
-    padding: 70px 0;
+    padding: 10px 0;
     background: #ffffff; /* This sets the background color for the whole section */
     text-align: center; /* This centers the title */
 }
@@ -378,21 +305,45 @@ hr{
     bottom: 10%;
     opacity: 1;
 }
-@media screen and (max-width: 770px) {
-    .what-I-did{
-        flex-basis: 100%;
-        margin-bottom: 40px;
+@media screen and (max-width: 770px){
+    .banner-text h1{
+        font-size: 44px;
     }
-    .what-I-did-desc {
-       font-size: 5px;
+    .banner-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    hr{
-        margin: 5px auto;
+    .banner-btn a{
+        display: block;
+        margin: 10px 0; /* Adds space between the buttons */
     }
-    .what-I-did:hover .what-I-did-desc{
-        bottom: 25% !important;
+    .logo {
+        width: 150px; /* Adjust the size as needed */
     }
-}
+    #banner {
+        position: relative; /* This ensures absolute-positioned children are relative to this container */
+        padding: 20px;
+           }
+           body {
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+            background-position: 100%;
+            height: 100vh;  
+            padding-bottom: 100%;
+        }
+        #menuBtn img{
+            width: 70px;
+            margin-top: 15px; 
+            margin-left: -10;
+        }
+        #banner {
+            position: relative; /* This ensures absolute-positioned children are relative to this container */
+            padding: 0px;
+            /* ... other styles ... */
+        }
+    }
 #AFTER-MATH{
         width: 100%;
         padding: 70px 0;
